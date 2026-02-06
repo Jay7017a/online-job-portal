@@ -1,0 +1,11 @@
+<h2>Add Job</h2>
+
+<form method="post">
+  {% csrf_token %}
+  <input name="title" placeholder="Job Title"><br>
+  <input name="company" placeholder="Company"><br>
+  <input name="location" placeholder="Location"><br>
+  <input name="salary" placeholder="Salary"><br>
+  <textarea name="description" placeholder="Description"></textarea><br>
+  <button type="submit">Post Job</button>
+</form>
